@@ -16,9 +16,9 @@ elsif who_plays == "2"
 elsif who_plays == "3"
   game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
 end
-  
 
-play_response = 'y'
+puts "Would you like to play now? ('y' or 'n')"
+play_response = gets.strip
 
 until play_response == 'n'
   until game.won?
