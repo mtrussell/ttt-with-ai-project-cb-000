@@ -13,11 +13,12 @@ until play_response == 'n'
   puts "Press '1' for Player vs Player"
   puts "Press '2' for Player vs Computer"
   puts "Press '3' for Computer vs Computer"
-  
+  who_plays = gets.strip
+
   until game.won?
     game.play
   end
 
   puts "Would you like to play again? ('y' or 'n')"
-  play_response = gets.chomp.downcase
+  play_response = gets.strip.downcase
 end
