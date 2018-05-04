@@ -24,6 +24,4 @@ if play_response == 'y'
   until game.won? || game.draw?
     game.play
   end
-  puts "Would you like to play again? ('y' or 'n')"
-  play_response = gets.strip.downcase
 end
