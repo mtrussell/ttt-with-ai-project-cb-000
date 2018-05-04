@@ -21,9 +21,9 @@ puts "Would you like to play now? ('y' or 'n')"
 play_response = gets.strip
 
 until play_response == 'n'
-  puts "Would you like to play again? ('y' or 'n')"
-  play_response = gets.strip.downcase
   until game.won?
     game.play
   end
+  puts "Would you like to play again? ('y' or 'n')"
+  play_response = gets.strip.downcase
 end
