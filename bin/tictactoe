@@ -10,11 +10,14 @@ game = Game.new
 play_response = 'y'
 
 until play_response == 'n'
+  puts "Press '1' for Player vs Player"
+  puts "Press '2' for Player vs Computer"
+  puts "Press '3' for Computer vs Computer"
+  
   until game.won?
     game.play
   end
-  
+
   puts "Would you like to play again? ('y' or 'n')"
   play_response = gets.chomp.downcase
 end
-  
